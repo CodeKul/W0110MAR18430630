@@ -1,0 +1,74 @@
+<div class="row">
+  <div class="col-md-12">
+    <p>Plain Binding {{ ttl }}</p>
+    <p>Function Call {{ ttl.toUpperCase() }}</p>
+    <p>Evaluation {{ 100 * ttl.length }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p>
+      <input type="" value="{{ttl}}">
+    </p>
+    <p>
+      <input [type]="typ" [value]="ttl">
+    </p>
+    <p>
+      <input [type]="typ" [value]="ttl" [style.border]="'1px solid red'">
+    </p>
+    <p>
+      <input [type]="typ" [value]="ttl" [class.btn]="true" [class.btn-primary]="true">
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div [class.alert]="isSuccess" [class.alert-success]="isSuccess" role="alert">
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <p>
+      <input type="button" value="Okay" (click)="btnClk()">
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="btn-group">
+      <button (click)="btnClk()" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        Action
+      </button>
+      <div class="dropdown-menu" [class.show]="isShow">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>
+        <input type="text" [(ngModel)]="utypd">
+      </p>
+      <p>
+        You typed - {{utypd}}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div>
+      <app-code-alert [typ]="'danger'" [strMsg]="'angular app development'" [msg]="'this is simple app, but we are going to cover huge apps also in codekul'"
+      (clsEv)="altCls($event)">
+      </app-code-alert>
+    </div>
+    <div>
+      <app-code-alert [typ]="'success'" [strMsg]="'angular app development'" [msg]="'this is simple app, but we are going to cover huge apps also in codekul'">
+      </app-code-alert>
+    </div>
+  </div>
+</div>
