@@ -18,7 +18,6 @@ export class LocalRefsComponent implements OnInit {
   }
 
   onBtn(nm: string) {
-    
     console.log(this.nAny.nativeElement)
   }
 }

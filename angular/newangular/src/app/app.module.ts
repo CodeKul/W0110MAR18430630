@@ -17,6 +17,9 @@ import { AlertCompComponent } from './databinding/inter-comp-com/alert-comp.comp
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { LocalRefsComponent } from './local-refs/local-refs.component';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbootComponent } from './ngboot/ngboot.component';
+
 
 @NgModule({
   declarations: [
@@ -32,11 +35,14 @@ import { LocalRefsComponent } from './local-refs/local-refs.component';
     BtnCompComponent,
     AlertCompComponent,
     LifecycleComponent,
-    LocalRefsComponent
+    LocalRefsComponent,
+    NgbootComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
