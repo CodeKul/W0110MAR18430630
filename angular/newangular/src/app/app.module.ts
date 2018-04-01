@@ -11,6 +11,11 @@ import { FancyComponent } from './fancy/fancy.component';
 import { CodeCardComponent } from './fancy/code-card/code-card.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { CodeAlertComponent } from './databinding/code-alert.component';
+import { InterCompComComponent } from './databinding/inter-comp-com/inter-comp-com.component';
+import { BtnCompComponent } from './databinding/inter-comp-com/btn-comp.component';
+import { AlertCompComponent } from './databinding/inter-comp-com/alert-comp.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { LocalRefsComponent } from './local-refs/local-refs.component';
 
 
 @NgModule({
@@ -22,7 +27,12 @@ import { CodeAlertComponent } from './databinding/code-alert.component';
     FancyComponent,
     CodeCardComponent,
     DatabindingComponent,
-    CodeAlertComponent
+    CodeAlertComponent,
+    InterCompComComponent,
+    BtnCompComponent,
+    AlertCompComponent,
+    LifecycleComponent,
+    LocalRefsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-12">
+    <app-btn-comp (btnClick)="brgFn($event)">
+    </app-btn-comp>
+    {{alTyp}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-alert-comp [alertType]="alTyp">
+      <h1>This is content</h1>
+    </app-alert-comp>
+  </div>
+</div>
