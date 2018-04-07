@@ -21,6 +21,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbootComponent } from './ngboot/ngboot.component';
 import { MyDirectivesComponent } from './my-directives/my-directives.component';
 import { SizerDirective } from './my-directives/sizer.directive';
+import { CstStrDirective } from './my-directives/cst-str.directive';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { SizerDirective } from './my-directives/sizer.directive';
     LocalRefsComponent,
     NgbootComponent,
     MyDirectivesComponent,
-    SizerDirective
+    SizerDirective,
+    CstStrDirective
   ],
   imports: [
     BrowserModule,

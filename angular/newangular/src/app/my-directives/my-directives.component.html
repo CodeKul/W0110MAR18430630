@@ -1,29 +1,67 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-12"> 
+    <div class="col-md-12">
       <div ngClass="{alert : true, alert-info : true}">This is codekul </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12"> 
+    <div class="col-md-12">
       <div [ngStyle]="{border : '1px solid red'}">This is codekul </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12"> 
-      <div *ngIf="false" >This is codekul </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12"> 
+    <div class="col-md-12">
       <!-- <input type="text" codeSizer [defSz]="'900px'"> -->
       <input type="text" [codeSizer]="'900px'">
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12"> 
+    <div class="col-md-12">
       <!-- <input type="text" codeSizer [defSz]="'300px'"> -->
       <input type="text" [codeSizer]="'300px'">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div *ngIf="true"> *ngIf = This is codekul</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <ng-template [ngIf]="true">
+        <div> desugared = This is codekul</div>
+      </ng-template>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <ol>
+        <li *ngFor="let mb of mobiles; let ind = index;">{{mb}} ===> {{ind}}</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div [ngSwitch]="mobile">
+        <div *ngSwitchCase="1">Android</div>
+        <div *ngSwitchCase="2">Apple</div>
+        <div *ngSwitchCase="3">Windows</div>
+        <div *ngSwitchDefault>Other Mobile</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div *appCstStr="true"> *appCstStr = This is codekul</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <ng-template [appCstStr]="true"> 
+        <div>*appCstStr = This is codekul</div>
+      </ng-template>
     </div>
   </div>
 </div>
