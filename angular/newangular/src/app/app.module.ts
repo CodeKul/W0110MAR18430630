@@ -19,6 +19,8 @@ import { LocalRefsComponent } from './local-refs/local-refs.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbootComponent } from './ngboot/ngboot.component';
+import { MyDirectivesComponent } from './my-directives/my-directives.component';
+import { SizerDirective } from './my-directives/sizer.directive';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { NgbootComponent } from './ngboot/ngboot.component';
     AlertCompComponent,
     LifecycleComponent,
     LocalRefsComponent,
-    NgbootComponent
+    NgbootComponent,
+    MyDirectivesComponent,
+    SizerDirective
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12"> 
+      <div ngClass="{alert : true, alert-info : true}">This is codekul </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12"> 
+      <div [ngStyle]="{border : '1px solid red'}">This is codekul </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12"> 
+      <div *ngIf="false" >This is codekul </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12"> 
+      <!-- <input type="text" codeSizer [defSz]="'900px'"> -->
+      <input type="text" [codeSizer]="'900px'">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12"> 
+      <!-- <input type="text" codeSizer [defSz]="'300px'"> -->
+      <input type="text" [codeSizer]="'300px'">
+    </div>
+  </div>
+</div>
