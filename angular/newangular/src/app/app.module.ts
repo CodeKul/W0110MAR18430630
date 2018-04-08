@@ -1,3 +1,4 @@
+import { MyDataService } from './services/my-data.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
@@ -22,6 +23,9 @@ import { NgbootComponent } from './ngboot/ngboot.component';
 import { MyDirectivesComponent } from './my-directives/my-directives.component';
 import { SizerDirective } from './my-directives/sizer.directive';
 import { CstStrDirective } from './my-directives/cst-str.directive';
+import { ServicesComponent } from './services/services.component';
+import { SerAlertComponent } from './services/ser-alert.component';
+import { SerBtnComponent } from './services/ser-btn.component';
 
 
 @NgModule({
@@ -42,7 +46,10 @@ import { CstStrDirective } from './my-directives/cst-str.directive';
     NgbootComponent,
     MyDirectivesComponent,
     SizerDirective,
-    CstStrDirective
+    CstStrDirective,
+    ServicesComponent,
+    SerAlertComponent,
+    SerBtnComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +57,7 @@ import { CstStrDirective } from './my-directives/cst-str.directive';
 
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [MyDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
