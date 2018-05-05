@@ -1,3 +1,4 @@
+import { RegModule } from './reg/reg.module';
 import { AdminModule } from './admin/admin.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -18,7 +19,8 @@ import { FpModule } from './fp/fp.module';
     AppRoutingModule,
     AdminModule,
     LoginModule,
-    FpModule
+    FpModule,
+    RegModule
   ],
   providers: [],
   bootstrap: [AppComponent]
