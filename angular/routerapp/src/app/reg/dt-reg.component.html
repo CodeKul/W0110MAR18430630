@@ -13,7 +13,7 @@
           class="input-xlarge"
           formControlName="usNm"
           >
-        <p class="help-block text-muted"*ngIf="!frmGrp.controls.usNm.valid">Username can contain any letters or numbers, without spaces</p>
+        <p class="help-block text-muted" *ngIf="!frmGrp.controls.usNm.valid">Username can contain any letters or numbers, without spaces</p>
       </div>
     </div>
 
@@ -26,8 +26,8 @@
           placeholder="" 
           class="input-xlarge"
           formControlName="eml">
-        <p class="help-block text-muted" *ngIf="frmGrp.">Please provide your E-mail</p>
-        <p class="help-block text-muted" >Check your email pattern</p>
+        <p class="help-block text-muted" *ngIf="frmGrp.controls.eml.errors?.required">Please provide your E-mail</p>
+        <p class="help-block text-muted" *ngIf="frmGrp.controls.eml.errors?.email">Check your email pattern</p>
       </div>
     </div>
 
@@ -41,7 +41,7 @@
           class="input-xlarge"
           formControlName="pass"
           >
-        <p class="help-block text-muted" >Password should be at least 4 characters</p>
+        <p class="help-block text-muted" *ngIf="!frmGrp.controls.pass.valid">Password should be at least 4 characters</p>
       </div>
     </div>
 

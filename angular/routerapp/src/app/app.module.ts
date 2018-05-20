@@ -1,3 +1,4 @@
+import { HttpObservablesModule } from './http-observables/http-observables.module';
 import { RegModule } from './reg/reg.module';
 import { AdminModule } from './admin/admin.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,7 +21,8 @@ import { FpModule } from './fp/fp.module';
     AdminModule,
     LoginModule,
     FpModule,
-    RegModule
+    RegModule,
+    HttpObservablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
